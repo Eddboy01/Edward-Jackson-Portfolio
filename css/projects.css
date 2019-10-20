@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #333; 
+}
+#header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    padding: 1rem;
+    
+
+    
+}
+#header .main-heading{
+    font-size: 2rem;
+    display: none
+}
+p{
+    font-size: 1.5rem;
+    padding:  1.5rem 2rem;
+    display: none;
+}
+i{
+    position: relative;
+    top: 45%;
+    padding: .8rem;
+    z-index: 3;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+
+}
+.img-box{
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    height: 300px;
+    width: 400px;
+    
+    
+    
+    
+    
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+.img-overlay{
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #333;;
+}
+.img-box:hover .img-overlay{
+    opacity: 1;
+    
+}
+.overlay-text{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+.overlay-left{
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+.overlay-left a{
+    color: #fff;
+}
+.overlay-left a:hover{
+    color: rgb(7, 178, 230);
+}
+.img-box:hover .overlay-left{
+    width: 100%;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.wrapper{
+   margin: 10px 0; 
+}
+@media(max-width: 1000px){
+    .img-box{
+        
+        width: 80%;
+        height: 300px;
+        /* margin-top: 10px; */
+    }
+    
+    
+
+}
+@media(max-width: 380px){
+    .img-box{
+        margin: 20px;
+    }
+}
+.links{
+    height: 100%;
+    width: 100%;
+}

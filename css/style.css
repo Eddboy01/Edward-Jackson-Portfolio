@@ -1,0 +1,154 @@
+body{
+    background: rgba(0,0,0,0.9);
+    margin: 0;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.showcase::after{
+    content: "";
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/blur-codes-coding-577585.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+
+}
+.showcase:hover::after{
+    filter: blur(0);
+    -webkit-filter: blur(0);
+}
+.showcase:hover .content{
+    /* filter: blur(0);
+    -webkit-filter: blur(0);   */
+}
+.content{
+border-radius: 5px;
+padding: 1rem;
+background-color: rgba(44, 43, 43, 0.7);
+position: absolute;
+z-index: 1;
+top: 10%;
+left: 45%;
+margin-top: 105px;
+margin-left: -145px;
+width: 300px;
+/* height: 350px; */
+text-align: center;
+transition: all 1000ms;
+}
+.content h1{
+    font-size: 2.5rem;
+
+}
+.content .title{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.content .text{
+line-height: 1.7;
+margin-top: 1rem;
+}
+.content .text i{
+    padding: .8rem;
+    color: rgb(7, 178, 230);
+}
+.container{
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.center{
+    text-align: center;
+    margin: auto;
+}
+.bg-light{
+    background-color: #f4f4f4;
+    color: #333;
+}
+.bg-dark{
+    background-color: #333;
+    color: #f4f4f4;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.services a{
+  color: #fff;
+}
+.services a:hover{
+  color: rgb(7, 178, 230);
+}
+#skill-section .outline{
+    width: 80%;
+    height: 50px;
+    border: 1px solid #333;
+}
+#skill-section .outline .skill{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(7, 178, 230); 
+}
+footer{
+    padding: 2.2rem;
+}
+footer p{
+    margin: 0;
+}
+
+/* Small Screens */
+@media (max-width: 560px) {
+    .showcase::after {
+      height: 50vh;
+    }
+  
+    .content {
+      top: 5%;
+      margin-top: 5px;
+    }
+  
+    .content .logo {
+      height: 140px;
+      width: 140px;
+    }
+  
+    .content .text {
+      display: none;
+    }
+  
+    .grid-3,
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  
+    .services div {
+      border-bottom: #333 dashed 1px;
+      padding: 1.2rem 1rem;
+    }
+  }
+  
+  /* Landscape */
+  @media (max-height: 500px) {
+    .content .title,
+    .content .text {
+      display: none;
+    }
+  
+    .content {
+      top: 0;
+    }
+  }
+  
