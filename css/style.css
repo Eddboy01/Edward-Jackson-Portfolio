@@ -91,6 +91,12 @@ body {
 .services a:hover {
   color: rgb(7, 178, 230);
 }
+
+.about .about-biography {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-weight: 500;
+}
 #skill-section .outline {
   width: 80%;
   height: 50px;
