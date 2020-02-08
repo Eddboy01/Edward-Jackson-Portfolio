@@ -92,7 +92,7 @@ body {
   color: rgb(7, 178, 230);
 }
 
-.about .about-biography {
+.about .about-biography p {
   font-size: 1.2rem;
   line-height: 1.7;
   font-weight: 500;
