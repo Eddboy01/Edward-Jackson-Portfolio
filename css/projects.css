@@ -36,13 +36,13 @@ main .web-dev-portfolio {
     ),
     url("../images/blur-close-up-code-computer-546819.jpg");
 }
-main .dribble {
+main .rainforest {
   background: linear-gradient(
       to bottom,
       rgba(22, 19, 19, 0.801),
       rgba(24, 20, 20, 0.808)
     ),
-    url("../images/amazing-astronomy-background-bright-544268.jpg");
+    url("../images/fog-foggy-forest-4827.jpg");
 }
 main .typewriter {
   background: linear-gradient(
@@ -51,6 +51,14 @@ main .typewriter {
       rgba(24, 20, 20, 0.808)
     ),
     url("../images/aerial-architecture-blue-sky-466685.jpg");
+}
+main .underwater {
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 19, 19, 0.801),
+      rgba(24, 20, 20, 0.808)
+    ),
+    url("../images/purple-and-pink-jelly-fish-1000654.jpg");
 }
 main .project-card {
   text-align: center;
@@ -75,9 +83,12 @@ main .project-card button {
   width: 100px;
   margin: 10px 5px;
   border-radius: 10px;
+  background-color: #333;
 }
 main .project-card button a {
   text-decoration: none;
-  color: #333;
+  font-weight: 500;
   font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
 }
